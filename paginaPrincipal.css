@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#formCal{
+    margin-top: 20px;
+}
+article{
+    margin-top: 20px;
+}
+label{
+    margin-bottom: 20px;
+}
+#respuestas{
+    margin-top: 20px;
+}
+#maxmin{
+    width: 70px;
+}
