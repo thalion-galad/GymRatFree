@@ -1,19 +1,158 @@
-header{
+/* === GENERAL === */
+body {
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* === ESTRUCTURA TEMPLO === */
+.estructura-templo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+/* COLUMNAS */
+.columna-lateral {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+/* CENTRO */
+.contenido-central {
+    flex-grow: 1;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+/* === HEADER (techo del templo) === */
+header {
     text-align: center;
-    border-bottom: 1px solid black;
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #fca311;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-#formCal{
+header h1 {
+    font-size: 3rem;
+    color: #fca311;
+    margin-bottom: 5px;
+}
+header h3 {
+    color: #f2f2f2;
+    margin-top: 5px;
+}
+header img {
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fca31155;
+}
+
+/* === NAVBAR === */
+nav {
+    background-color: #232323;
+    border-bottom: 2px solid #fca311;
+    border-radius: 0 0 10px 10px;
+}
+nav a {
+    color: #f2f2f2 !important;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #fca311 !important;
+}
+nav a.nav-link.active {
+    background-color:  #232323 !important;
+}
+
+
+/* === CUERPO PRINCIPAL === */
+#cuerpo {
+    background-color: #2a2a2a;
+    padding: 30px 40px;
+    margin-top: 0;
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 15px #fca31133;
+}
+
+/* === FORMULARIO === */
+#formCal {
     margin-top: 20px;
 }
-article{
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+input, select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    margin-bottom: 10px;
+}
+input:focus, select:focus {
+    outline: none;
+    background-color: #555;
+}
+
+/* === BOTÓN === */
+button {
+    background-color: #fca311;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
 }
-label{
-    margin-bottom: 20px;
+button:hover {
+    background-color: #e59500;
+    transform: scale(1.05);
 }
-#respuestas{
-    margin-top: 20px;
+
+/* === RESPUESTAS === */
+#respuestas {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #fca311;
 }
-#maxmin{
-    width: 70px;
+#respuestas label {
+    margin-top: 10px;
+}
+
+/* === TÍTULOS === */
+h3 {
+    color: #fca311;
+}
+
+/* === ELIMINAR BORDES IMAGENES === */
+img {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#alerta {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 470px;
+     text-align: center;
 }

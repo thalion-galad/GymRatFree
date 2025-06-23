@@ -1,4 +1,48 @@
-header{
+header {
     text-align: center;
-    border-bottom: 1px solid black;
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #fca311;
+  
+}
+header h1 {
+    font-size: 3rem;
+    color: #fca311;
+    margin-bottom: 5px;
+}
+header h3 {
+    color: #f2f2f2;
+    margin-top: 5px;
+}
+header img {
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fca31155;
+}
+
+/* === NAVBAR === */
+nav {
+    background-color: #232323;
+    border-bottom: 2px solid #fca311;
+    border-radius: 0 0 10px 10px;
+}
+nav a {
+    color: #f2f2f2 !important;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #fca311 !important;
+}
+nav a.nav-link.active {
+    background-color:  #232323 !important;
+}
+
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }

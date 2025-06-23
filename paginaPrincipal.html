@@ -9,82 +9,90 @@
     <link rel="stylesheet" href="paginaPrincipal.css">
 </head>
 <body>
+
     <header>
         <h1>GYMRAT FREE</h1>
-        <h3>Asi lo hace Cbum</h3>
+        <h3>Yeah buddy, lightweight baby</h3>
        <img src="https://static.wikia.nocookie.net/doblaje/images/c/c1/JohnnyBravo.png/revision/latest?cb=20231102032815&path-prefix=es" title="SOY ESE" width="100px"> 
     </header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Calculadora de proteninas</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="segundaPagina.html">Segunda página</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nose</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <nav>
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="paginaPrincipal.html">Calculadora de proteinas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="segundaPagina.html">Busca tu entrenador</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 </nav>
 
-   <article>
-    <h3>Calculadora de proteinas:</h3>
-    <form id="formCal" action="">
-        <label>Peso (kg): </label>
-        <input type="number" id="peso"/>
-        <label>Altura (cm): </label>
-        <input type="number" id="altura"/>
-        <label>Edad (años):</label>
-        <input type="number" id="edad"> 
-        <label>Sexo:</label>
-        <select name="" id="sexo">
-            <option value="M">hombre</option>
-            <option value="F">mujer</option>
-            <option value="jisas">jisas</option>
-        </select> 
-        <br>
-        <label>Nivel de actividad fisica:</label>
-         <select name="" id="actividad">
-            <option value="sede">Sedentario (Poco o nada de ejercicio)</option>
-            <option value="lacti">Ligeramente Activo (1-3 días por semana)</option>
-            <option value="acti">Activo (3-5 días por semana)</option>
-            <option value="muyac">Muy activo (6-7 días por semana)</option>
-        </select> 
-        <label for="">Objetivo:</label>
-        <select name="" id="objetivo">
-            <option value="mp">Mantener peso</option>
-            <option value="pg">Perder Grasa</option>
-            <option value="am">Aumentar masa muscular</option>
-        </select>
-        <br>
-        <button type="button" onclick="calcularProte()">CALCULAR</button>
-  <div id="respuestas">
-    <label>Proteinas en gramos a consumir por día:</label> <br>
-    <label>Maximo:</label> <input type="text" id="maxProt" >
-    <label>Mínimo:</label> <input type="text" id="minProt"> <br>
-    <label>Calorias en gramos a consumir por día:</label> <br>
-    <label>Maximo:</label> <input type="text" id="maxCal">
-    <label>Mínimo:</label> <input type="text" id="minCal">
-    </div>
+<div class="estructura-templo">
 
-    <script src="paginaPrincipla.js">
-      
-    </script>
-    </form>
-   </article>
+  
+  <img src="" alt="" class="columna-lateral izquierda">
+
+
+  <div class="contenido-central">
+    <article id="cuerpo">
+      <h3>Calculadora de proteínas:</h3>
+      <form id="formCal" action="">
+          <label>Peso (kg): </label>
+          <input type="number" id="peso"/>
+          <label>Altura (cm): </label>
+          <input type="number" id="altura"/>
+          <label>Edad (años):</label>
+          <input type="number" id="edad"> 
+          <label>Sexo:</label>
+          <select id="sexo">
+              <option value="M">hombre</option>
+              <option value="F">mujer</option>
+              <option value="jisas">jisas</option>
+          </select> 
+          <br>
+          <label>Nivel de actividad física:</label>
+          <select id="actividad">
+              <option value="sede">Sedentario (Poco o nada de ejercicio)</option>
+              <option value="lacti">Ligeramente Activo (1-3 días por semana)</option>
+              <option value="acti">Activo (3-5 días por semana)</option>
+              <option value="muyac">Muy activo (6-7 días por semana)</option>
+          </select> 
+          <label>Objetivo:</label>
+          <select id="objetivo">
+              <option value="mp">Mantener peso</option>
+              <option value="pg">Perder Grasa</option>
+              <option value="am">Aumentar masa muscular</option>
+          </select>
+          <br>
+          <button type="button" onclick="calcularProte()">CALCULAR</button>
+
+          <div id="alerta"></div>
+
+
+          <div id="respuestas">
+              <label>Proteínas en gramos a consumir por día:</label> <br>
+              <label>Máximo:</label> <input type="text" id="maxProt">
+              <label>Mínimo:</label> <input type="text" id="minProt"> <br>
+              <label>Calorías en gramos a consumir por día:</label> <br>
+              <label>Máximo:</label> <input type="text" id="maxCal">
+              <label>Mínimo:</label> <input type="text" id="minCal">
+          </div>
+      </form>
+    </article>
+  </div>
+
+  <img src="" alt="" class="columna-lateral derecha">
+
+</div>
+
+<script src="paginaPrincipla.js"></script>
+
   
 </body>
 </html>

@@ -8,6 +8,15 @@ function calcularProte(){
     let tmb;
     let tdee;
 
+    if (!sexo || !actividad || !objetivo || isNaN(peso) || isNaN(altura) || isNaN(edad)) {
+        document.getElementById("alerta").innerHTML = `
+            <div class="alert alert-warning" role="alert">
+                Por favor, completa todos los campos antes de continuar.
+            </div>
+        `;
+        return;
+    }
+
     
     if(sexo=="M"){
       tmb = (10*peso)+(6.25*altura)-(5*edad)+5;
