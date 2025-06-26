@@ -38,13 +38,14 @@ header {
     text-align: center;
     background-color: #111;
     padding: 20px;
-    border-bottom: 4px solid #fca311;
+    border-bottom: 4px solid #D98324;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 header h1 {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
-    color: #fca311;
+    color: #D98324;
     margin-bottom: 5px;
 }
 header h3 {
@@ -61,7 +62,7 @@ header img {
 /* === NAVBAR === */
 nav {
     background-color: #232323;
-    border-bottom: 2px solid #fca311;
+    border-bottom: 2px solid #D98324;
     border-radius: 0 0 10px 10px;
 }
 nav a {
@@ -69,7 +70,7 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
-    color: #fca311 !important;
+    color: #D98324 !important;
 }
 nav a.nav-link.active {
     background-color:  #232323 !important;
@@ -82,9 +83,9 @@ nav a.nav-link.active {
     padding: 30px 40px;
     margin-top: 0;
     
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 0 15px #fca31133;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 2px #D98324;
 }
 
 /* === FORMULARIO === */
@@ -113,7 +114,7 @@ input:focus, select:focus {
 
 /* === BOTÓN === */
 button {
-    background-color: #fca311;
+    background-color: #D98324;
     color: white;
     padding: 10px 25px;
     border: none;
@@ -124,15 +125,13 @@ button {
     transition: background-color 0.3s, transform 0.2s;
 }
 button:hover {
-    background-color: #e59500;
+    background-color: #D98324;
     transform: scale(1.05);
 }
 
 /* === RESPUESTAS === */
 #respuestas {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #fca311;
+    padding-top: 5px;
 }
 #respuestas label {
     margin-top: 10px;
@@ -140,7 +139,7 @@ button:hover {
 
 /* === TÍTULOS === */
 h3 {
-    color: #fca311;
+    color: #D98324;
 }
 
 /* === ELIMINAR BORDES IMAGENES === */
@@ -155,4 +154,36 @@ img {
      margin-bottom: 20px;
      width: 470px;
      text-align: center;
+}
+
+.contenedor-doble-columna {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.columna-formulario, .columna-resultados {
+    flex: 1;
+    min-width: 300px;
+}
+
+.columna-resultados input,
+.columna-formulario input,
+.columna-formulario select {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.columna-resultados h3 {
+    margin-top: 0;
+    color: #D98324;
+}
+
+.titulo-central {
+    text-align: center;
+    color: #D98324;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
